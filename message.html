@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>Austin Zhang's Portfolio</title>
+    </head>
+    <body>
+        <header>
+            <a class="skip-to-content" href="#maincontent">
+                Skip to content
+            </a>
+            <nav class="mobile_nav">
+                <a href="message.html" class="active">Leave a Message</a>
+                <div id="links">
+                    <a href="index.html">About Me</a>
+                    <a href="photos.html">Pictures</a>
+                    <a href="projects.html">Projects</a>
+                </div>
+                <a href="javascript:void(0);" class="menu_icon" id="menu_icon">
+                    <img src="img/hamburgerr.png" class="menu_image" alt="Menu icon">
+                </a>
+            </nav>
+            <h1 class="title">Austin's Portfolio Page
+                <nav class="desktop_nav">
+                    <ul class="navbar">
+                        <li>
+                            <a href="index.html">About Me</a>
+                        </li>
+                        <li>
+                            <a href="photos.html">Pictures</a>
+                        </li>
+                        <li>
+                            <a href="projects.html">Projects</a>
+                        </li>
+                        <li class="active">
+                            <a href="message.html">Leave a Message</a>
+                        </li>
+                    </ul>
+                </nav>
+            </h1>
+        </header>
+        <main>
+        <div class="message_box" id="#maincontent">
+            <form>
+          
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name">
+          
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Write your message here" style="height:200px"></textarea>
+          
+              <input type="button" value="Submit" onclick="submitmessage()">
+          
+            </form>
+          </div>
+          <div class="indexbody">
+            <p id="saved1"></p>
+            <p id="saved2"></p>
+            <p id="saved3"></p>
+            <p id="saved4"></p>
+          </div>
+        </main>
+        <footer>
+            Austin Zhang 2022
+        </footer>
+    </body>
+    <script src="js/index_script.js"></script>
+    <script src="js/message_box.js"></script>
+</html>

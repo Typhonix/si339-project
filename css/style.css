@@ -1,0 +1,274 @@
+.title {
+    font-size: 36px;
+    padding: 20px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(255,231,136,1) 47%, rgba(255,255,255,1) 97%);
+}
+
+.desktop_nav li {
+    display: inline-block;
+    padding: 10px;
+    width: 20%;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.about_me_content {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.desktop_nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.desktop_nav {
+    display: none;
+}
+
+.profileimage {
+    display: block;
+    margin: auto;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.desktop_nav li:hover {
+    background-color: rgb(150, 150, 150);
+}
+
+.mobile_nav {
+    overflow: hidden;
+    background-color: rgb(255, 246, 164);
+    position: relative;
+}
+
+.mobile_nav #links {
+    display: none;
+}
+
+.mobile_nav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+}
+
+.mobile_nav a.menu_icon {
+    background-color: rgb(255, 255, 255);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 16px;
+    width: 16px;
+}
+
+.menu_image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.active {
+    background-color: rgb(179, 179, 179);
+    font-weight: bold;
+}
+
+body {
+    background-color: rgb(251, 255, 189);
+    font-family: Cabin,sans-serif;
+    font-style: normal;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.indexbody {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+.progress {
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    margin: 20px 10px;
+    border: 1px solid rgb(189, 113, 113);
+    overflow: hidden;
+    position: relative;
+  }
+  
+.progress span {
+    height: 100%;
+    display: block;
+    width: 0;
+    line-height: 30px;
+    position: absolute;
+    text-align: end;
+    padding-right: 5px;
+    background-color: tan;
+}
+
+.photos {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    align-items: center;
+    justify-items: center;
+}
+
+.photos img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.projectimage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fixedimage {
+    max-width: 100%;
+}
+
+.skip-to-content {
+    left: 50%;
+    position: absolute;
+    transform: translateY(-100%);
+    height: 20px;
+}
+
+.skip-to-content:focus {
+    transform: translateY(0%);
+}
+
+footer {
+    margin-top: auto;
+    background-color: darkgray;
+    padding: 20px;
+}
+
+
+.projects {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+
+.project_card {
+    justify-content: center;
+    padding: 30px;
+    max-width: 90%;
+}
+
+.project_card div {
+    padding: 30px;
+}
+
+.project_desc {
+    background-color: rgba(15, 15, 15, 0.808);
+    padding: 10px;
+    color: white;
+}
+
+.lab_rat_card {
+    background-image: url("../img/labrat7.png");
+}
+
+.eecs485_card {
+    background-image: url("../img/insta485.png");
+}
+
+.fakebook_card {
+    background-image: url("../img/sql.jpeg");
+}
+
+.tyler_card {
+    background-image: url("../img/tyler.jpg");
+}
+
+.angular_card {
+    background-color: lightblue;
+}
+
+input[type=button] {
+    background-color: #a09e9e;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    resize: vertical
+  }
+
+  .message_box {
+    border-radius: 5px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 20px;
+  }
+  
+  .prev_messages {
+
+  }
+
+@media (min-width: 768px) {
+    .title {
+        font-size: 50px;
+    }
+
+    .projects {
+        flex-flow: row wrap-reverse;
+    }
+
+    .project_card {
+        max-width: 40%;
+    }
+
+    .about_me_content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .mobile_nav {
+        display: none;
+    }
+
+    .desktop_nav {
+        display: block;
+    }
+    
+    .photos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .about_me_content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
